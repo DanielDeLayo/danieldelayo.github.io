@@ -7,46 +7,38 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Daniel DeLayo
+title: Daniel DeLayo's site
+email: ddelayo@cs.stonybrook.edu # email of site's author
 url: "https://danieldelayo.github.io"
+author: Daniel DeLayo # name of site's author
+baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 
-navbar-links:
-  Home: "/"
-  Résumé: "/resume"
-  
 
-social-network-links:
-  email: "ddelayo at cs.stonybrook.edu"
-  github: "danieldelayo"
-  ORCID: "0000-0001-7636-0107"
-  google-scholar: "citations?user=DOsRBc8AAAAJ"
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+
+# favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
+# goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
+
+sass:
+  style: :compressed
+
+
+
 
 google_analytics: "G-CVLR2C85RK"
 
 exclude:
-  - CHANGELOG.md
-  - CNAME
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
 
 # Build settings
-remote_theme: daattali/beautiful-jekyll@5.0.0
+remote_theme: riggraz/no-style-please@v0.3.1
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
-  - jekyll-feed
+  - jekyll-seo-tag

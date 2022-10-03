@@ -1,0 +1,31 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: About Me (Résumé)
+    url: assets/resume.pdf
+    entries:
+      - title: Second-Year PhD Student @ Stony Brook University
+        url: false
+      - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a>
+        url: false
+      - title: Email me at ddelayo@cs.stonybrook.edu
+        url: false
+
+  - title: Publications
+    url: false
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html 
+  
+  - title: Links
+    url: false
+    entries:
+      - title: Github 
+        url: https://github.com/DanielDeLayo
+      - title: ORCID
+        url: https://orcid.org/0000-0001-7636-0107
+      - title: Google Scholar
+        url: https://scholar.google.com/citations?user=DOsRBc8AAAAJ
