@@ -1,4 +1,0 @@
----
-layout: page
-excerpt: "A simple and clean responsive Jekyll theme for words and photos."
----

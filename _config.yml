@@ -28,14 +28,14 @@ theme_config:
 sass:
   style: :compressed
 
-
-
-
 google_analytics: "G-CVLR2C85RK"
 
 exclude:
   - Gemfile
   - Gemfile.lock
+
+keep_files:
+  - resume.pdf
 
 # Build settings
 remote_theme: riggraz/no-style-please@v0.3.1

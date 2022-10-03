@@ -2,14 +2,14 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: About Me (Résumé)
-    url: assets/resume.pdf
+  - title: About Me <a href="resume.pdf" target="_blank">(Résumé)</a>
+    url: false
     entries:
-      - title: Second-Year PhD Student @ Stony Brook University
+      - title: Second-Year PhD Student @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
         url: false
       - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a>
         url: false
-      - title: Email me at ddelayo@cs.stonybrook.edu
+      - title: Email me at <a href="mailto:ddelayo@cs.stonybrook.edu">ddelayo@cs.stonybrook.edu</a>
         url: false
 
   - title: Publications
@@ -17,7 +17,7 @@ entries:
     post_list:
       limit: 5
       show_more: true
-      show_more_text: See archive...
+      show_more_text: See all...
       show_more_url: archive.html 
   
   - title: Links
