@@ -21,14 +21,23 @@
 title: Daniel DeLayo's Site
 email: ddelayo at cs.stonybrook.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Daniel DeLayo's personal website
+  Daniel DeLayo's personal website. Here you can find my research, papers, presentations, and select publicly available code.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://danieldelayo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  danieldelayo
 
+
+mathjax:
+  enable: true             # MathJax equations, e.g. true, false (default)
+  combo: "tex-svg"         # "tex-svg" (default), "tex-mml-chtml", etc.
+  tags: "ams"              # "none", "ams" (default), "all"
+
+google_analytics: "G-CVLR2C85RK"
+
 # Build settings
-theme: minima
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
 plugins:
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
   - jekyll-feed
 
 # Exclude from processing.
