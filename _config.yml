@@ -11,7 +11,7 @@ title: Daniel DeLayo's site
 email: ddelayo@cs.stonybrook.edu # email of site's author
 url: "https://danieldelayo.github.io"
 author: Daniel DeLayo # name of site's author
-baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 
 
 
@@ -28,6 +28,7 @@ theme_config:
 sass:
   style: :compressed
 
+#TODO
 google_analytics: "G-CVLR2C85RK"
 
 exclude:

@@ -7,25 +7,44 @@ entries:
     entries:
       - title: Second-Year PhD Student @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
         url: false
-      - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a>
+      - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a> on
         url: false
+        entries:
+        - title: Parallel and Distributed Computation
+          url: false
+        - title: External Memory Algorithms
+          url: false
+        - title: Streaming and Semi-Streaming Algorithms
+          url: false
       - title: Email me at <a href="mailto:ddelayo@cs.stonybrook.edu">ddelayo@cs.stonybrook.edu</a>
         url: false
 
   - title: Publications
     url: false
-    post_list:
-      limit: 5
-      show_more: true
-      show_more_text: See all...
-      show_more_url: archive.html 
+    entries:
+        - title: "Automatic hbm management: Models and algorithms"
+          url: https://doi.org/10.1145/3490148.3538570
+          entries:
+          - title: By Daniel DeLayo*, Kenny Zhang*, Kunal Agrawal, Michael A Bender, Jonathan W Berry, Rathish Das, Benjamin Moseley, and Cynthia A Phillips (* Joint first-authors)
+            url: false
+          - title: Slides @ SPAA 2022
+            url: https://docs.google.com/presentation/d/13cxfHbzg0HHaRo7hWR1G9VYn_elzn4y15NdDL3_pu1w/edit?usp=sharing
+          - title: Slides @ MAPSP 2022
+            url: https://docs.google.com/presentation/d/1qBSH726CQUKf8fOsLAgh3KegonPZ2gTVix1wP8W8TKI/edit?usp=sharing 
+
+        - title: "Using advanced data structures to enable responsive security monitoring"
+          url: https://doi.org/10.1007/s10586-021-03463-5
+          entries:
+          - title: By Janet Vorobyeva*, Daniel DeLayo*, Michael A. Bender, Martín Farach-Colton, Prashant Pandey, Cynthia A. Phillips, Shikha Singh, Eric D. Thomas and Thomas M. Kroeger (* Joint first-authors)
+            url: false
+          
   
   - title: Links
     url: false
     entries:
-      - title: Github 
-        url: https://github.com/DanielDeLayo
-      - title: ORCID
-        url: https://orcid.org/0000-0001-7636-0107
       - title: Google Scholar
         url: https://scholar.google.com/citations?user=DOsRBc8AAAAJ
+      - title: ORCID
+        url: https://orcid.org/0000-0001-7636-0107
+      - title: Github 
+        url: https://github.com/DanielDeLayo
