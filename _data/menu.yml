@@ -2,7 +2,7 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: About Me <a href="resume.pdf" target="_blank">(Résumé)</a>
+  - title: <h3>About Me <a href="resume.pdf" target="_blank">(Résumé)</a> </h3>
     url: false
     entries:
       - title: Second-Year PhD Student @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
@@ -10,36 +10,36 @@ entries:
       - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a> on
         url: false
         entries:
-        - title: Parallel and Distributed Computation
+        - title: <p style="font-size:.9em">Parallel and Distributed Computation<p>
           url: false
-        - title: External Memory Algorithms
+        - title: <p style="font-size:.9em">External Memory Algorithms<p>
           url: false
-        - title: Streaming and Semi-Streaming Algorithms
+        - title: <p style="font-size:.9em">Streaming and Semi-Streaming Algorithms<p>
           url: false
       - title: Email me at <a href="mailto:ddelayo@cs.stonybrook.edu">ddelayo@cs.stonybrook.edu</a>
         url: false
 
-  - title: Publications
+  - title: <h3>Publications and Talks</h3> 
     url: false
     entries:
         - title: "Automatic hbm management: Models and algorithms"
           url: https://doi.org/10.1145/3490148.3538570
           entries:
-          - title: By Daniel DeLayo*, Kenny Zhang*, Kunal Agrawal, Michael A Bender, Jonathan W Berry, Rathish Das, Benjamin Moseley, and Cynthia A Phillips (* Joint first-authors)
+          - title: <p style="font-size:.8em">By Daniel DeLayo*, Kenny Zhang*, Kunal Agrawal, Michael A Bender, Jonathan W Berry, Rathish Das, Benjamin Moseley, and Cynthia A Phillips (* Joint first-authors)<p>
             url: false
-          - title: Slides @ SPAA 2022
+          - title: Slides from Talk @ SPAA 2022
             url: https://docs.google.com/presentation/d/13cxfHbzg0HHaRo7hWR1G9VYn_elzn4y15NdDL3_pu1w/edit?usp=sharing
-          - title: Slides @ MAPSP 2022
+          - title: Slides from Talk @ MAPSP 2022
             url: https://docs.google.com/presentation/d/1qBSH726CQUKf8fOsLAgh3KegonPZ2gTVix1wP8W8TKI/edit?usp=sharing 
 
         - title: "Using advanced data structures to enable responsive security monitoring"
           url: https://doi.org/10.1007/s10586-021-03463-5
           entries:
-          - title: By Janet Vorobyeva*, Daniel DeLayo*, Michael A. Bender, Martín Farach-Colton, Prashant Pandey, Cynthia A. Phillips, Shikha Singh, Eric D. Thomas and Thomas M. Kroeger (* Joint first-authors)
+          - title: <p style="font-size:.8em">By Janet Vorobyeva*, Daniel DeLayo*, Michael A. Bender, Martín Farach-Colton, Prashant Pandey, Cynthia A. Phillips, Shikha Singh, Eric D. Thomas and Thomas M. Kroeger (* Joint first-authors)</p>
             url: false
           
   
-  - title: Links
+  - title: <h3>Links</h3>
     url: false
     entries:
       - title: Google Scholar
