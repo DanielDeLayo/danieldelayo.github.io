@@ -5,7 +5,7 @@ entries:
   - title: <h3>About Me <a href="resume.pdf" target="_blank">(Résumé)</a> </h3>
     url: false
     entries:
-      - title: Second-Year PhD Student @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
+      - title: Third-Year PhD Student @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
         url: false
       - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a> on
         url: false
