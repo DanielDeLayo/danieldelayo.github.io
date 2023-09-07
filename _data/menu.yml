@@ -22,6 +22,11 @@ entries:
   - title: <h3>Publications and Talks</h3> 
     url: false
     entries:
+        - title: "Increment-and-Freeze: Every Cache, Everywhere, All of the Time"
+          url: https://doi.org/10.1145/3558481.3591085
+          entries:
+          - title: <p style="font-size:.8em">By Michael Bender, Daniel DeLayo, Bradley C. Kuszmaul, William Kuszmaul, and Evan West (Alphabetical ordering)<p>
+            url: false
         - title: "Automatic hbm management: Models and algorithms"
           url: https://doi.org/10.1145/3490148.3538570
           entries:
