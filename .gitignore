@@ -4,3 +4,4 @@ _site/*
 .jekyll-metadata
 vendor
 !_site/resume.pdf
+!_site/CV.pdf
