@@ -37,6 +37,7 @@ exclude:
 
 keep_files:
   - resume.pdf
+  - CV.pdf
 
 # Build settings
 remote_theme: riggraz/no-style-please@v0.3.1
