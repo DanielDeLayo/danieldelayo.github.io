@@ -5,7 +5,7 @@ entries:
   - title: <h3>About Me <a href="resume.pdf" target="_blank">(Résumé)</a> </h3>
     url: false
     entries:
-      - title: Third-Year PhD Student @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
+      - title: Fourth-Year PhD Candidate @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
         url: false
       - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a> on
         url: false
@@ -22,6 +22,16 @@ entries:
   - title: <h3>Publications and Talks</h3> 
     url: false
     entries:
+        - title: "Exploring the Landscape of Distributed Graph Sketchin"
+          url: https://doi.org/10.1137/1.9781611978339.11
+          entries:
+          - title: <p style="font-size:.8em"> David Tench, Evan T. West, Kenny Zhang, Michael A. Bender, Daniel DeLayo, Martín Farach-Colton, Gilvir Gill, Tyler Seip, and Victor Zhang <p>
+            url: false
+        - title: "GraphZeppelin: How to Find Connected Components (Even When Graphs Are Dense, Dynamic, and Massive"
+          url: https://doi.org/10.1145/3643846
+          entries:
+          - title: <p style="font-size:.8em">By  David Tench, Evan West, Victor Zhang, Michael A. Bender, Abiyaz Chowdhury, Daniel Delayo, J. Ahmed Dellas, Martín Farach-Colton, Tyler Seip, Kenny Zhang<p>
+            url: false
         - title: "Increment-and-Freeze: Every Cache, Everywhere, All of the Time"
           url: https://doi.org/10.1145/3558481.3591085
           entries:
