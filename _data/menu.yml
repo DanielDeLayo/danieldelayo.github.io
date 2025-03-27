@@ -37,7 +37,7 @@ entries:
           entries:
           - title: <p style="font-size:.8em">By Michael Bender, Daniel DeLayo, Bradley C. Kuszmaul, William Kuszmaul, and Evan West (Alphabetical ordering)<p>
             url: false
-        - title: "Automatic hbm management: Models and algorithms"
+        - title: "Automatic HBM Management: Models and Algorithms"
           url: https://doi.org/10.1145/3490148.3538570
           entries:
           - title: <p style="font-size:.8em">By Daniel DeLayo*, Kenny Zhang*, Kunal Agrawal, Michael A Bender, Jonathan W Berry, Rathish Das, Benjamin Moseley, and Cynthia A Phillips (* Joint first-authors)<p>
