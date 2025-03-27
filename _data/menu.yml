@@ -2,7 +2,7 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: <h3>About Me <a href="CurriculumVitae.pdf" target="_blank">(Curriculum Vitae)</a></h3>
+  - title: <h3>About Me <a href="Curriculum_Vitae.pdf" target="_blank">(Curriculum Vitae)</a></h3>
     url: false
     entries:
       - title: Fourth-Year PhD Candidate @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
