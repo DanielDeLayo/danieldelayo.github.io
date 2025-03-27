@@ -2,7 +2,7 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: <h3>About Me <a href="resume.pdf" target="_blank">(Résumé)</a> <a href="CV.pdf" target="_blank">(Curriculum Vitae)</a></h3>
+  - title: <h3>About Me <a href="Curriculum_Vitae.pdf" target="_blank">(Curriculum Vitae)</a></h3>
     url: false
     entries:
       - title: Fourth-Year PhD Candidate @ <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
@@ -10,11 +10,11 @@ entries:
       - title: Advised by <a href='https://www3.cs.stonybrook.edu/~bender/'> Michael A. Bender</a> on
         url: false
         entries:
-        - title: <p style="font-size:.9em">Parallel and Distributed Computation<p>
+        - title: <p style="font-size:.9em">Parallel Algorithms<p>
           url: false
-        - title: <p style="font-size:.9em">External Memory Algorithms<p>
+        - title: <p style="font-size:.9em">Cache and Memory Management<p>
           url: false
-        - title: <p style="font-size:.9em">Streaming and Semi-Streaming Algorithms<p>
+        - title: <p style="font-size:.9em"Performance Engineering: Combining Theory & Practice<p>
           url: false
       - title: Email me at <a href="mailto:ddelayo@cs.stonybrook.edu">ddelayo@cs.stonybrook.edu</a>
         url: false
