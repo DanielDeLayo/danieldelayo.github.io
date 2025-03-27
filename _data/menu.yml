@@ -14,7 +14,7 @@ entries:
           url: false
         - title: <p style="font-size:.9em">Cache and Memory Management<p>
           url: false
-        - title: <p style="font-size:.9em">Performance Engineering: Combining Theory & Practice<p>
+        - title: <p style="font-size:.9em">Performance Engineering: Combining Theory And Practice<p>
           url: false
       - title: Email me at <a href="mailto:ddelayo@cs.stonybrook.edu">ddelayo@cs.stonybrook.edu</a>
         url: false
