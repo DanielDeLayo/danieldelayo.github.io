@@ -36,8 +36,7 @@ exclude:
   - Gemfile.lock
 
 keep_files:
-  - resume.pdf
-  - CV.pdf
+  - Curriculum_Vitae.pdf
 
 # Build settings
 remote_theme: riggraz/no-style-please@v0.3.1
