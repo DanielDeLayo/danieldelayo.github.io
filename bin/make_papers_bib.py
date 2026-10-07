@@ -23,6 +23,12 @@ EXTRAS = {
         "slides": "https://docs.google.com/presentation/d/13cxfHbzg0HHaRo7hWR1G9VYn_elzn4y15NdDL3_pu1w/edit?usp=sharing"},
     "vorobyevaUsingAdvancedData2022": {"abbr": "Cluster"},
 }
+# Joint first authors: al-folio renders a trailing * on a last name as a superscript
+EQUAL = {
+    "delayoAutomaticHBMManagement2022": ["DeLayo, Daniel", "Zhang, Kenny"],
+    "vorobyevaUsingAdvancedData2022": ["Vorobyeva, Janet", "DeLayo, Daniel"],
+}
+EQUAL_NOTE = "* Joint first authors."
 DROP = ("file", "urldate", "copyright", "keywords")
 
 src = sys.argv[1] if len(sys.argv) > 1 else "../cv/zotero.bib"
@@ -50,6 +56,14 @@ for entry in re.split(r"\n(?=@)", text.strip()):
     key = re.match(r"@\w+\{([^,]+),", entry).group(1)
     lines = [l for l in entry.rstrip().rstrip("}").rstrip().split("\n")
              if not re.match(r"\s*(%s)\s*=" % "|".join(DROP), l)]
+    for name in EQUAL.get(key, []):
+        last, first = name.split(", ")
+        i = next(i for i, l in enumerate(lines) if re.match(r"\s*author\s*=", l))
+        assert name in lines[i], f"{name} not in {key} authors"
+        lines[i] = lines[i].replace(name, f"{last}*, {first}")
+    if key in EQUAL:
+        lines[-1] = lines[-1].rstrip(",") + ","
+        lines.append(f"  annotation = {{{EQUAL_NOTE}}},")
     lines[-1] = lines[-1].rstrip(",") + ","
     for k, v in EXTRAS.get(key, {}).items():
         lines.append(f"  {k} = {{{v}}},")

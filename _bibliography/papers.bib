@@ -40,7 +40,7 @@
 @inproceedings{delayoAutomaticHBMManagement2022,
   title = {Automatic {{HBM Management}}: {{Models}} and {{Algorithms}}},
   booktitle = {Proceedings of the 34th {{ACM Symposium}} on {{Parallelism}} in {{Algorithms}} and {{Architectures}}},
-  author = {DeLayo, Daniel and Zhang, Kenny and Agrawal, Kunal and Bender, Michael A. and Berry, Jonathan W. and Das, Rathish and Moseley, Benjamin and Phillips, Cynthia A.},
+  author = {DeLayo*, Daniel and Zhang*, Kenny and Agrawal, Kunal and Bender, Michael A. and Berry, Jonathan W. and Das, Rathish and Moseley, Benjamin and Phillips, Cynthia A.},
   year = 2022,
   month = jul,
   pages = {147--159},
@@ -49,6 +49,7 @@
   doi = {10.1145/3490148.3538570},
   abstract = {Some past and future supercomputer nodes incorporate High-Bandwidth Memory (HBM). Compared to standard DRAM, HBM has similar latency, higher bandwidth and lower capacity. In this paper, we evaluate algorithms for managing High-Bandwidth Memory automatically. Previous work suggests that, in the worst case, performance is extremely sensitive to the policy for managing the channel to DRAM. Prior theory shows that a priority-based scheme (where there is a static strict priority-order among p threads for channel access) is O(1)-competitive, but FIFO is not, and in the worst case is Ω(p) competitive. Following this theoretical guidance would be a disruptive change for vendors, who currently use FIFO variants in their DRAM controller hardware. Our goal is to determine theoretically and empirically whether we can justify recommending investment in priority-based DRAM controller hardware. In order to experiment with DRAM channel protocols, we chose a theoretical model, validated it against real hardware, and implemented a basic simulator. We corroborated the previous theoretical results for the model, conducted a parameter sweep while running our simulator on address traces from memory bandwidth-bound codes (GNU sort and TACO sparse matrix-vector product), and designed better channel-access algorithms.},
   isbn = {978-1-4503-9146-7},
+  annotation = {* Joint first authors.},
   abbr = {SPAA},
   slides = {https://docs.google.com/presentation/d/13cxfHbzg0HHaRo7hWR1G9VYn_elzn4y15NdDL3_pu1w/edit?usp=sharing}
 }
@@ -117,7 +118,7 @@
 
 @article{vorobyevaUsingAdvancedData2022,
   title = {Using Advanced Data Structures to Enable Responsive Security Monitoring},
-  author = {Vorobyeva, Janet and DeLayo, Daniel and Bender, Michael A. and {Farach-Colton}, Mart{\'i}n and Pandey, Prashant and Phillips, Cynthia A. and Singh, Shikha and Thomas, Eric D. and Kroeger, Thomas M.},
+  author = {Vorobyeva*, Janet and DeLayo*, Daniel and Bender, Michael A. and {Farach-Colton}, Mart{\'i}n and Pandey, Prashant and Phillips, Cynthia A. and Singh, Shikha and Thomas, Eric D. and Kroeger, Thomas M.},
   year = 2022,
   month = aug,
   journal = {Cluster Computing},
@@ -127,5 +128,6 @@
   issn = {1386-7857},
   doi = {10.1007/s10586-021-03463-5},
   abstract = {Write-optimized data structures (WODS), offer the potential to keep up with cyberstream event rates and give sub-second query response for key items like IP addresses. These data structures organize logs as the events are observed. To work in a real-world environment and not fill up the disk, WODS must efficiently expire older events. As the basis for our research into organizing security monitoring data, we implemented a tool, called Diventi, to index IP addresses in connection logs using RocksDB (a write-optimized LSM tree). In this work, we extended Diventi to automatically expire data as part of the data structures' normal operations. We guarantee that Diventi always tracks the N most recent events and tracks no more than N + k events for a parameter k {<} N, while ensuring the index is opportunistically pruned. To test Diventi at scale in a controlled environment, we used anonymized traces of IP communications collected at SuperComputing 2019. We synthetically extended the 2.4 billion connection events to 100 billion events. We tested Diventi vs. Elasticsearch, a common log indexing tool. In our test environment, Elasticsearch saw an ingestion rate of at best 37,000 events/s while Diventi sustained ingestion rates greater than 171,000 events/s. Our query response times were as much as 100 times faster, typically answering queries in under 80 ms. Furthermore, we saw no noticeable degradation in Diventi from expiration. We have deployed Diventi for many months where it has performed well and supported new security analysis capabilities.},
+  annotation = {* Joint first authors.},
   abbr = {Cluster}
 }

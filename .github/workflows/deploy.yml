@@ -83,6 +83,9 @@ jobs:
         run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
+      - name: Keep the old CV URL working 🔗
+        # The pre-al-folio site served the CV at /Curriculum_Vitae.pdf
+        run: cp _site/assets/pdf/Curriculum_Vitae.pdf _site/Curriculum_Vitae.pdf
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
