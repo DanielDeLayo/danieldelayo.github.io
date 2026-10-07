@@ -1,0 +1,131 @@
+---
+---
+
+@inproceedings{benderDontMeltYour2025,
+  title = {Don't {{Melt Your Cache}}: {{Low-Associativity}} with {{Heat-Sink}}},
+  booktitle = {Proceedings of the 37th {{ACM Symposium}} on {{Parallelism}} in {{Algorithms}} and {{Architectures}}},
+  author = {Bender, Michael A. and Conway, Alex and DeLayo, Daniel and {Farach-Colton}, Mart{\'i}n and Han, Jaehyun and He, Linfeng and Johnson, Rob and Kannan, Sudarsun and Kuszmaul, William and Porter, Donald and West, Evan},
+  year = 2025,
+  month = jul,
+  pages = {555--565},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  doi = {10.1145/3694906.3743303},
+  abstract = {Perhaps the most influential result in the theory of caches is the following theorem due to Sleator and Tarjan: With O(1) resource augmentation, the basic LRU eviction policy is guaranteed to be O(1)-competitive with the optimal offline policy. Sleator and Tarjan's result applies to LRU on a fully associative cache, but does not tell us how to think about caches with low associativity, i.e., caches where each page has only d positions in which it is capable of residing. This means that many modern caches cannot directly apply the result. It is widely believed that to implement a cache with low associativity, one should still use LRU, but restricted to the d positions that are eligible for eviction. However, this low-associativity version of LRU has never been analyzed. We show that low-associativity implementations of LRU are often actually not constant-competitive algorithms. On the other hand, we give randomized eviction algorithms that are constant-competitive, and even a d-associative algorithm that, using any d = {\omega}(1), and using 1 + o(1) resource augmentation, is 1 + o(1) competitive with the fully-associative LRU algorithm. Combined, our algorithms suggest a new way of thinking about the design of low-associativity caches, in which one intentionally designs randomized mechanisms that allow parts of the cache which are "overheating" to naturally cool down.},
+  isbn = {979-8-4007-1258-6},
+  abbr = {SPAA},
+  selected = {true},
+  award_name = {Distinguished Paper},
+  award = {SPAA 2025 Distinguished Paper Award.},
+  slides = {slides/halg2026-heat-sink.pdf}
+}
+
+@inproceedings{benderIncrementFreezeEvery2023,
+  title = {Increment-and-{{Freeze}}: {{Every Cache}}, {{Everywhere}}, {{All}} of the {{Time}}},
+  booktitle = {Proceedings of the 35th {{ACM Symposium}} on {{Parallelism}} in {{Algorithms}} and {{Architectures}}},
+  author = {Bender, Michael A. and DeLayo, Daniel and Kuszmaul, Bradley C. and Kuszmaul, William and West, Evan},
+  year = 2023,
+  month = jun,
+  pages = {129--139},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  doi = {10.1145/3558481.3591085},
+  abstract = {One of the most basic algorithmic problems concerning caches is to compute the LRU hit-rate curve on a given trace. Unfortunately, the known algorithms exhibit poor data locality and fail to scale to large caches. It is widely believed that the LRU hit-rate curve cannot be computed efficiently enough to be used in online production settings. This has led to a large literature on heuristics that aim to approximate the curve efficiently. In this paper, we show that the poor data locality of past algorithms can be avoided. We introduce a new algorithm, called Increment-and-Freeze, for computing exact LRU hit-rate curves. The algorithm achieves RAM-model complexity O(n log n), external-memory complexity O((n/B) log n), and parallelism {\Theta}(log n). We also present two theoretical extensions of Increment-and-Freeze, one that achieves SORT complexity in the external-memory model, and one that achieves a parallel span of O(log² n), which is near linear parallelism, while maintaining work efficiency. We implement Increment-and-Freeze and obtain a speedup of up to 9× over the classical augmented-tree algorithm on a single processor. On 16 threads, the speedup becomes as large as 60×. In comparison to the previous state-of-the-art parallel algorithm, Increment-and-Freeze achieves a speedup of up to 10× when both algorithms use the same number of threads.},
+  isbn = {978-1-4503-9545-8},
+  abbr = {SPAA},
+  selected = {true},
+  code = {https://github.com/etwest/Increment-and-Freeze}
+}
+
+@inproceedings{delayoAutomaticHBMManagement2022,
+  title = {Automatic {{HBM Management}}: {{Models}} and {{Algorithms}}},
+  booktitle = {Proceedings of the 34th {{ACM Symposium}} on {{Parallelism}} in {{Algorithms}} and {{Architectures}}},
+  author = {DeLayo, Daniel and Zhang, Kenny and Agrawal, Kunal and Bender, Michael A. and Berry, Jonathan W. and Das, Rathish and Moseley, Benjamin and Phillips, Cynthia A.},
+  year = 2022,
+  month = jul,
+  pages = {147--159},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  doi = {10.1145/3490148.3538570},
+  abstract = {Some past and future supercomputer nodes incorporate High-Bandwidth Memory (HBM). Compared to standard DRAM, HBM has similar latency, higher bandwidth and lower capacity. In this paper, we evaluate algorithms for managing High-Bandwidth Memory automatically. Previous work suggests that, in the worst case, performance is extremely sensitive to the policy for managing the channel to DRAM. Prior theory shows that a priority-based scheme (where there is a static strict priority-order among p threads for channel access) is O(1)-competitive, but FIFO is not, and in the worst case is Ω(p) competitive. Following this theoretical guidance would be a disruptive change for vendors, who currently use FIFO variants in their DRAM controller hardware. Our goal is to determine theoretically and empirically whether we can justify recommending investment in priority-based DRAM controller hardware. In order to experiment with DRAM channel protocols, we chose a theoretical model, validated it against real hardware, and implemented a basic simulator. We corroborated the previous theoretical results for the model, conducted a parameter sweep while running our simulator on address traces from memory bandwidth-bound codes (GNU sort and TACO sparse matrix-vector product), and designed better channel-access algorithms.},
+  isbn = {978-1-4503-9146-7},
+  abbr = {SPAA},
+  slides = {https://docs.google.com/presentation/d/13cxfHbzg0HHaRo7hWR1G9VYn_elzn4y15NdDL3_pu1w/edit?usp=sharing}
+}
+
+@misc{demanFastCompactSketchBased2025,
+  title = {Fast and {{Compact Sketch-Based Dynamic Connectivity}}},
+  author = {De Man, Quinten and Jafri, Qamber and DeLayo, Daniel and West, Evan T. and Bender, Michael A. and Tench, David},
+  year = 2025,
+  publisher = {arXiv},
+  doi = {10.48550/ARXIV.2509.14433},
+  url = {https://arxiv.org/abs/2509.14433},
+  abstract = {We study the dynamic connectivity problem for massive, dense graphs. Our goal is to build a system for dense graphs that simultaneously answers connectivity queries quickly, maintains a fast update throughput, and a uses a small amount of memory. Existing systems at best achieve two of these three performance goals at once.  We present a parallel dynamic connectivity algorithm using graph sketching techniques that has space complexity O(V log³ V) and query complexity O(log V/log log V). Its updates are fast and parallel: in the worst case, it performs updates in O(log² V) depth and O(log⁴ V) work. For updates which don't change the spanning forests maintained by our data structure, the update complexity is O(log V) depth and O(log² V) work.  We also present CUPCaKE (Compact Updating Parallel Connectivity and Sketching Engine), a dynamic connectivity system based on our parallel algorithm. It uses an order of magnitude less memory than the best lossless systems on dense graph inputs, answers queries with microsecond latency, and ingests millions of updates per second on dense graphs.},
+  abbr = {arXiv},
+  arxiv = {2509.14433},
+  code = {https://github.com/etwest/DynamicQueriesCC}
+}
+
+@inproceedings{jonesBehavioralSegmentationClustering2025,
+  title = {Behavioral {{Segmentation}} and {{Clustering}} of {{Geospatial Trajectories}}},
+  booktitle = {2025 {{IEEE}} 28th {{International Conference}} on {{Intelligent Transportation Systems}} ({{ITSC}})},
+  author = {Jones, Jessica L. and Wilson, Andrew T. and Gooding, Renee and DeLayo, Daniel and Dalbey, Keith and Whetzel, Jon and Sharan, Nitin},
+  year = 2025,
+  month = nov,
+  pages = {4375--4381},
+  publisher = {IEEE},
+  address = {Gold Coast, Australia},
+  doi = {10.1109/ITSC60802.2025.11423696},
+  url = {https://ieeexplore.ieee.org/document/11423696/},
+  abstract = {The rapid growth of global positioning system (GPS) devices has led to a corresponding increase in the size of GPS datasets. While these large GPS datasets contain a wealth of information about the moving objects in them, manual classification and anomaly detection are prohibitively time consuming. We utilize unsupervised machine learning techniques to first identify the behaviors for individual moving objects and then cluster those objects by their behavioral sequences. In this way, trajectories behaving unusually as well as common patterns of behavior are both detectable in large datasets without requiring an a priori definition of "unusual" or "common."},
+  isbn = {979-8-3315-2418-0},
+  abbr = {ITSC}
+}
+
+@inproceedings{tenchExploringLandscapeDistributed2025,
+  title = {Exploring the {{Landscape}} of {{Distributed Graph Sketching}}},
+  booktitle = {2025 {{Proceedings}} of the {{Symposium}} on {{Algorithm Engineering}} and {{Experiments}} ({{ALENEX}})},
+  author = {Tench, David and West, Evan T. and Zhang, Kenny and Bender, Michael A. and DeLayo, Daniel and {Farach-Colton}, Mart{\'i}n and Gill, Gilvir and Seip, Tyler and Zhang, Victor},
+  year = 2025,
+  month = jan,
+  pages = {133--146},
+  publisher = {{Society for Industrial and Applied Mathematics}},
+  address = {Philadelphia, PA},
+  doi = {10.1137/1.9781611978339.11},
+  abstract = {Recent work has initiated the study of dense graph processing using graph sketching methods, which drastically reduce space costs by lossily compressing information about the input graph. In this paper, we explore the strange and surprising performance landscape of sketching algorithms. We highlight both their surprising advantages for processing dense graphs that were previously prohibitively expensive to study, as well as the current limitations of the technique. Most notably, we show how sketching can avoid bottlenecks that limit conventional graph processing methods. Single-machine streaming graph processing systems are typically bottlenecked by CPU performance, and distributed graph processing systems are typically bottlenecked by network latency. We present Landscape, a distributed graph-stream processing system that uses linear sketching to distribute the CPU work of computing graph properties to distributed workers with no need for worker-to-worker communication. As a result, it overcomes the CPU and network bottlenecks that limit other systems. In fact, for the connected components problem, Landscape achieves a stream ingestion rate one-fourth that of maximum sustained RAM bandwidth, and is four times faster than random access RAM bandwidth. Additionally, we prove that for any sequence of graph updates and queries Landscape consumes at most a constant factor more network bandwidth than is required to receive the input stream. We show that this system can ingest up to 332 million stream updates per second on a graph with 2¹⁷ vertices. We show that it scales well with more distributed compute power: given a cluster of 40 distributed worker machines, it can ingest updates 35 times as fast as with 1 distributed worker machine. Landscape uses heuristics to reduce its query latency by up to four orders of magnitude over the prior state of the art.},
+  abbr = {ALENEX},
+  arxiv = {2410.07518},
+  code = {https://github.com/GraphStreamingProject/Landscape}
+}
+
+@article{tenchGraphZeppelinHowFind2024,
+  title = {{{GraphZeppelin}}: {{How}} to {{Find Connected Components}} ({{Even When Graphs Are Dense}}, {{Dynamic}}, and {{Massive}})},
+  author = {Tench, David and West, Evan and Zhang, Victor and Bender, Michael A. and Chowdhury, Abiyaz and DeLayo, Daniel and Dellas, J. Ahmed and {Farach-Colton}, Mart{\'i}n and Seip, Tyler and Zhang, Kenny},
+  year = 2024,
+  month = sep,
+  journal = {ACM Transactions on Database Systems},
+  volume = {49},
+  number = {3},
+  pages = {1--31},
+  issn = {0362-5915},
+  doi = {10.1145/3643846},
+  abstract = {Finding the connected components of a graph is a fundamental problem with uses throughout computer science and engineering. The task of computing connected components becomes more difficult when graphs are very large, or when they are dynamic, meaning the edge set changes over time subject to a stream of edge insertions and deletions. A natural approach to computing the connected components problem on a large, dynamic graph stream is to buy enough RAM to store the entire graph. However, the requirement that the graph fit in RAM is an inherent limitation of this approach and is prohibitive for very large graphs. Thus, there is an unmet need for systems that can process dense dynamic graphs, especially when those graphs are larger than available RAM.},
+  abbr = {TODS},
+  selected = {true},
+  code = {https://github.com/GraphStreamingProject/GraphZeppelin}
+}
+
+@article{vorobyevaUsingAdvancedData2022,
+  title = {Using Advanced Data Structures to Enable Responsive Security Monitoring},
+  author = {Vorobyeva, Janet and DeLayo, Daniel and Bender, Michael A. and {Farach-Colton}, Mart{\'i}n and Pandey, Prashant and Phillips, Cynthia A. and Singh, Shikha and Thomas, Eric D. and Kroeger, Thomas M.},
+  year = 2022,
+  month = aug,
+  journal = {Cluster Computing},
+  volume = {25},
+  number = {4},
+  pages = {2893--2914},
+  issn = {1386-7857},
+  doi = {10.1007/s10586-021-03463-5},
+  abstract = {Write-optimized data structures (WODS), offer the potential to keep up with cyberstream event rates and give sub-second query response for key items like IP addresses. These data structures organize logs as the events are observed. To work in a real-world environment and not fill up the disk, WODS must efficiently expire older events. As the basis for our research into organizing security monitoring data, we implemented a tool, called Diventi, to index IP addresses in connection logs using RocksDB (a write-optimized LSM tree). In this work, we extended Diventi to automatically expire data as part of the data structures' normal operations. We guarantee that Diventi always tracks the N most recent events and tracks no more than N + k events for a parameter k {<} N, while ensuring the index is opportunistically pruned. To test Diventi at scale in a controlled environment, we used anonymized traces of IP communications collected at SuperComputing 2019. We synthetically extended the 2.4 billion connection events to 100 billion events. We tested Diventi vs. Elasticsearch, a common log indexing tool. In our test environment, Elasticsearch saw an ingestion rate of at best 37,000 events/s while Diventi sustained ingestion rates greater than 171,000 events/s. Our query response times were as much as 100 times faster, typically answering queries in under 80 ms. Furthermore, we saw no noticeable degradation in Diventi from expiration. We have deployed Diventi for many months where it has performed well and supported new security analysis capabilities.},
+  abbr = {Cluster}
+}

@@ -1,0 +1,6 @@
+# Links co-author names in publication lists, keyed by lowercase last name.
+# Example:
+# "bender":
+#   - firstname: ["Michael", "Michael A.", "M. A."]
+#     url: https://www3.cs.stonybrook.edu/~bender/
+{}

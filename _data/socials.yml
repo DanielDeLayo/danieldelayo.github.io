@@ -1,0 +1,27 @@
+# Social links, rendered in this order on the about page.
+# Custom entries (logo/title/url) are used instead of the built-in keys so the
+# hover text reads "DBLP" rather than "Dblp url". https://github.com/george-gca/jekyll-socials
+contact_email:
+  logo: fa-solid fa-envelope
+  title: Email
+  url: mailto:ddelayo@cs.stonybrook.edu
+contact_cv:
+  logo: ai ai-cv
+  title: CV (PDF)
+  url: /assets/pdf/Curriculum_Vitae.pdf
+profile_scholar:
+  logo: ai ai-google-scholar
+  title: Google Scholar
+  url: https://scholar.google.com/citations?user=DOsRBc8AAAAJ
+profile_dblp:
+  logo: ai ai-dblp
+  title: DBLP
+  url: https://dblp.org/pid/324/0844.html
+profile_orcid:
+  logo: ai ai-orcid
+  title: ORCID
+  url: https://orcid.org/0000-0001-7636-0107
+profile_github:
+  logo: fa-brands fa-github
+  title: GitHub
+  url: https://github.com/DanielDeLayo

@@ -1,0 +1,6 @@
+# Optional link/color for publication venue badges, keyed by the bib "abbr" field.
+# Example:
+# "SPAA":
+#   url: https://spaa.acm.org/
+#   color: "#00369f"
+{}
