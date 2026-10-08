@@ -31,6 +31,6 @@ nav_order: 3
 #### Service
 
 | 2025–2026 | **SPAA** | Shadow Program Committee |
-| 2024–2026 | **ALENEX** | Artifact Evaluation (Reproducibility) |
+| 2024–2026 | **ALENEX** | Artifact Evaluation Committee |
 | 2023 | **ESA** | Peer Review |
 | 2022 | **IPDPS** | Peer Review |
