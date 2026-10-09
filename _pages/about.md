@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate in Computer Science at <a href='https://www.stonybrook.edu/'>Stony Brook University</a>
 
 profile:
   align: right
@@ -29,6 +28,6 @@ I am a PhD candidate in Computer Science at Stony Brook University and a [MongoD
 
 My research focuses on how memory movement and contention limit performance, and on algorithms that overcome those limits. I develop parallel algorithms and space-efficient data structures that combine provable guarantees with high-performance implementations.
 
-In caching, I study miss-ratio curves, caches with limited associativity, and caches with changing capacity. My algorithm [Increment-and-Freeze](https://github.com/etwest/Increment-and-Freeze) computes exact miss-ratio curves in a single pass, up to 10× faster than the previous best parallel algorithm. A sampling-based version is being integrated into WiredTiger, MongoDB's storage engine.
+In caching, I study miss-ratio curves, caches with limited associativity, and caches with changing capacity. Miss-ratio curves were long considered too expensive to compute in production systems. As part of my MongoDB PhD Fellowship, I am integrating my algorithm into MongoDB, where it computes them with negligible overhead.
 
 Beyond caching, I work on problems whose performance is dominated by memory movement: determinacy race detection in parallel programs, linear sketching for massive, dense graphs, and compact filters.
