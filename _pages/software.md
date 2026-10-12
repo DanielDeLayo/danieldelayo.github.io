@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 **[Increment-and-Freeze](https://github.com/etwest/Increment-and-Freeze)** (2023–present)  
-Fast parallel computation of LRU hit-rate curves. Being integrated into WiredTiger and OpenCilk.  
+Fast parallel computation of LRU miss-ratio curves. Being integrated into WiredTiger and OpenCilk.  
 Paper: [SPAA 2023](https://doi.org/10.1145/3558481.3591085)
 
 **[CUPCaKE](https://github.com/etwest/DynamicQueriesCC)** (2025)  
