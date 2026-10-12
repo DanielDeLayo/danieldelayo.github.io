@@ -8,11 +8,11 @@ nav_order: 2
 ---
 
 **[Increment-and-Freeze](https://github.com/etwest/Increment-and-Freeze)** (2023–present)  
-Exact parallel LRU miss-ratio curves, up to 10× faster than the prior best. Being integrated into WiredTiger and OpenCilk.  
+Exact parallel LRU miss-ratio curves, up to 10× faster than the prior best parallel algorithm. Being integrated into WiredTiger and OpenCilk.  
 Paper: [SPAA 2023](https://doi.org/10.1145/3558481.3591085)
 
 **[CUPCaKE](https://github.com/etwest/DynamicQueriesCC)** (2025)  
-Parallel dynamic connectivity, up to 10× smaller than lossless systems.  
+Dense-graph dynamic connectivity in 10× less memory than lossless systems.  
 Paper: [arXiv 2025](https://arxiv.org/abs/2509.14433)
 
 **[Landscape](https://github.com/GraphStreamingProject/Landscape)** (2024)  
